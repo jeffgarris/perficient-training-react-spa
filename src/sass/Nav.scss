@@ -1,0 +1,32 @@
+@import "Global";
+
+.Nav {
+    background-color: #fff;
+
+    .nav-logo {
+        position: relative;
+        top: 3px;
+        width: 40px;
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        padding: 10px;
+    }
+
+    li {
+
+        &:not(:first-child) {
+            margin-left: 20px;
+        }
+        a {
+            font-family: "Roboto";
+            font-weight: 800;
+            color: $blackish;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}
