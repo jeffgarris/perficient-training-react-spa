@@ -4,7 +4,7 @@ import React from 'react';
 function Technologies() {
     return (
         <div className="Technologies">
-            <h1>Technologies Used:</h1>
+            <h1>Technologies Used</h1>
 
             <ul>
                 <li><a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">React.js</a> - Version 16.8.6</li>

@@ -7,7 +7,7 @@ function Home() {
         <div className="Home">
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
-                <h1>React Single Page Application</h1>
+                <h2>React Single Page Application</h2>
             </header>
         </div>
     );
