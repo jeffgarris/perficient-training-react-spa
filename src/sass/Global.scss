@@ -17,7 +17,8 @@ h5 {
 }
 
 h1 {
-    font-size: 48px;
+    padding-right: 20px;
+    padding-left: 20px;
     text-transform: uppercase;
 }
 
@@ -33,4 +34,8 @@ li {
     a {
         color: $react-link;
     }
+}
+
+.button {
+    user-select: none;
 }

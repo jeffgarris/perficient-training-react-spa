@@ -17,15 +17,22 @@
     }
 
     li {
+        font-family: "Roboto";
+        font-weight: 800;
+        color: $blackish;
+        text-transform: uppercase;
 
         &:not(:first-child) {
             margin-left: 20px;
         }
+
+        &.page-views {
+            flex: 1;
+            text-align: right;
+        }
+
         a {
-            font-family: "Roboto";
-            font-weight: 800;
             color: $blackish;
-            text-transform: uppercase;
             text-decoration: none;
         }
     }
