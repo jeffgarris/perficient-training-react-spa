@@ -4,8 +4,8 @@ import Nav from './Nav';
 import Home from './Home';
 import Technologies from './Technologies';
 import Random from './Random';
-import './sass/Global.scss';
-import './App.scss';
+import '../sass/Global.scss';
+import '../components/App.scss';
 
 class App extends React.Component {
 

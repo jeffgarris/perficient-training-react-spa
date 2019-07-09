@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './sass/Random.scss';
+import '../components/Random.scss';
 
 function Random(props) {
 

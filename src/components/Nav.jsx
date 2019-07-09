@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from './logo.svg';
-import './App.scss';
-import './sass/Nav.scss';
+import logo from '../assets/logo.svg';
+import '../components/App.scss';
+import '../components/Nav.scss';
 
 function Nav(props) {
     return (
