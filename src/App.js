@@ -12,20 +12,11 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      marvelData: null,
       count: 0
     };
 
     this.handleIncrement = this.handleIncrement.bind(this);
     this.handleDecrement = this.handleDecrement.bind(this);
-  }
-
-  componentDidMount() {
-    fetch('https://gateway.marvel.com/v1/public/characters?name=hulk&apikey=c742ff52fd52d3bc6f31c469c69ea4b4')
-      .then(response => response.json())
-      .then(data => this.setState({ marvelData: data }));
-
-    console.log(this.state.marvelData);
   }
 
   handleDecrement() {
