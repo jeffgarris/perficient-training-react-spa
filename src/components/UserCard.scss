@@ -1,0 +1,40 @@
+@import "../components/App";
+
+.UserCard {
+    .cards {
+        display: flex;
+        padding: 20px;
+
+        @media (max-width: 767px) {
+            &:not(:first-child) {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .card {
+        padding: 20px;
+        width: 100%;
+        border-radius: 10px;
+        background-color: #fff;
+
+        @media (max-width: 767px) {
+            &:not(:first-child) {
+                margin-top: 20px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            width: 33%;
+
+            &:not(:first-child) {
+                margin-left: 20px;
+            }
+        }
+
+        h3 {
+            font-size: 24px;
+            color: $blackish;
+        }
+    }
+}

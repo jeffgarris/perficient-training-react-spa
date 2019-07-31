@@ -1,21 +1,28 @@
 @import "../components/App";
 
 .Random {
-    .counter {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 40px;
-        color: $white;
-    }
+    padding-bottom: 50px;
+    
+    section {
+        position: relative;
 
-    .count {
-        margin: 0 25px;
-        font-size: 90px;
-    }
+        &:not(:first-of-type) {
+            margin-top: 50px;
+        }
 
-    .button {
-        width: 30px;
-        cursor: pointer;
+        &:not(:last-of-type) {
+            padding-bottom: 50px;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90%;
+                height: 1px;
+                background-color: $white;
+            }
+        }
     }
 }

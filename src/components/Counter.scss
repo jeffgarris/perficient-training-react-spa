@@ -1,0 +1,21 @@
+@import "../components/App";
+
+.Counter {
+    .counter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 40px;
+        color: $white;
+    }
+
+    .count {
+        margin: 0 25px;
+        font-size: 90px;
+    }
+
+    .button {
+        width: 30px;
+        cursor: pointer;
+    }
+}

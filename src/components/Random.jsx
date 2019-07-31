@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import Counter from '../components/Counter'
+import UserCard from '../components/UserCard';
 import '../components/Random.scss';
 
 function Random(props) {
@@ -17,21 +18,17 @@ function Random(props) {
 
         const items = await data.json();
 
-        console.log(items.data.results[0]);
+        // console.log(items.data.results[0]);
 
         setItems(items.data.results[0]);
     }
 
     return (
         <div className="Random">
-            <h1>Random Functionality</h1>
+            <h1>Random Components</h1>
 
-            <h2>Counter</h2>
-            <div className="counter">
-                <div className="button" onClick={props.onDecrement}>-</div>
-                <span className="count">{props.count}</span>
-                <div className="button" onClick={props.onIncrement}>+</div>
-            </div>
+            <Counter count={props.count} onDecrement={props.onDecrement} onIncrement={props.onIncrement} />
+            <UserCard users={props.users} />
 
             <div className="marvel-api">
                 {/* {items.map(item => (

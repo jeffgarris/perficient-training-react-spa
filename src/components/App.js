@@ -11,7 +11,24 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0
+      count: 0,
+      users: [
+        {
+          name: 'Bruce Lee',
+          profession: 'Martial Artist',
+          age: 32,
+        },
+        {
+          name: 'Stevie Ray Vaughan',
+          profession: 'Blues Guitarist',
+          age: 35
+        },
+        {
+          name: 'Brian Regan',
+          profession: 'Comedian',
+          age: 61
+        }
+      ]
     };
 
     this.handleIncrement = this.handleIncrement.bind(this);
@@ -44,6 +61,7 @@ class App extends React.Component {
               count={this.state.count}
               onDecrement={this.handleDecrement}
               onIncrement={this.handleIncrement}
+              users={this.state.users}
             />}
           />
         </div>
