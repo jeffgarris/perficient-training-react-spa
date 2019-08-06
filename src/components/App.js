@@ -12,20 +12,25 @@ class App extends React.Component {
     super(props);
     this.state = {
       count: 0,
-      users: [
+      heros: [
         {
           name: 'Bruce Lee',
           profession: 'Martial Artist',
-          age: 32,
+          born: 'November 27, 1940',
+          died: 'July 20, 1973',
+          age: 32
         },
         {
           name: 'Stevie Ray Vaughan',
           profession: 'Blues Guitarist',
+          born: 'October 3, 1954',
+          died: 'August 27, 1990',
           age: 35
         },
         {
           name: 'Brian Regan',
           profession: 'Comedian',
+          born: 'June 2, 1958',
           age: 61
         }
       ]
@@ -61,7 +66,7 @@ class App extends React.Component {
               count={this.state.count}
               onDecrement={this.handleDecrement}
               onIncrement={this.handleIncrement}
-              users={this.state.users}
+              heros={this.state.heros}
             />}
           />
         </div>

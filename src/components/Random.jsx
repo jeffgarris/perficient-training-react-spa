@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Counter from '../components/Counter'
-import UserCard from '../components/UserCard';
+import HeroCard from './HeroCard';
 import '../components/Random.scss';
 
 function Random(props) {
@@ -28,7 +28,7 @@ function Random(props) {
             <h1>Random Components</h1>
 
             <Counter count={props.count} onDecrement={props.onDecrement} onIncrement={props.onIncrement} />
-            <UserCard users={props.users} />
+            <HeroCard heros={props.heros} />
 
             <div className="marvel-api">
                 {/* {items.map(item => (
