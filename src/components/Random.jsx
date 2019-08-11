@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Counter from '../components/Counter'
 import HeroCard from './HeroCard';
-import '../components/Random.scss';
 
 function Random(props) {
 

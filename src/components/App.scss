@@ -94,3 +94,9 @@ li {
     transform: rotate(360deg);
   }
 }
+
+@import "../components/Counter";
+@import "../components/HeroCard";
+@import "../components/Home";
+@import "../components/Nav";
+@import "../components/Random";

@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../assets/logo.svg';
-import '../components/Home.scss';
 
 function Home() {
     return (

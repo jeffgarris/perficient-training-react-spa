@@ -1,5 +1,4 @@
 import React from 'react';
-import '../components/Counter.scss';
 
 function Counter(props) {
     return (

@@ -1,5 +1,4 @@
 import React from 'react';
-import '../components/HeroCard.scss';
 
 function HeroCard(props) {
     return (
